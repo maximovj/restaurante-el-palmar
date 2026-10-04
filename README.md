@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# Restaurante El Palmar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En el corazón de la Zona Romántica, frente a la brisa del mar, te esperamos con lo mejor de la cocina costera. Mariscos frescos, cortes a la parrilla y cócteles de autor en un ambiente relajado y tropical.
 
-Currently, two official plugins are available:
+## Menú
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Ceviche El Palmar
+  - $320
+  - Pescado del día, limón, cilantro, cebolla morada, aguacate y totopos.
 
-## React Compiler
+- Tacos de camarón
+  - $280
+  - Camarones salteados con ajo y chile de árbol, tortillas de maíz, salsa verde.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Pulpo a las brasas
+  - $480
+  - Pulpo cocido y terminado al carbón, puré de papa al azafrán, aceite de oliva.
 
-## Expanding the ESLint configuration
+- Arrachera El Palmar
+  - $420
+  - 220g de arrachera a la parrilla, frijoles charros, guacamole y tortillas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Paloma Vallarta
+  - $160
+  - Tequila blanco, toronja, limón, sal de gusano y refresco de toronja.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Ensalada Tropical
+  - $190
+  - Lechuga, mango, jícama, nuez, aderezo de maracuyá y camarones opcionales.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Ubicación
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Francisca Rodríguez 121, Zona Romántica, Emiliano Zapata, 48380 Puerto Vallarta, Jal.
 
-```
+- Lun–Dom: 12:00 pm – 11:00 pm
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- +52 322 123 4567
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- hola@elpalmarpv.com
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- A 2 minutos de la playa Los Muertos
