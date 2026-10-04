@@ -1,0 +1,16 @@
+@import './variables.css';
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--verde-profundo);
+  color: var(--crema);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { color: inherit; }
+img { display: block; max-width: 100%; }
