@@ -1,0 +1,105 @@
+# ─────────────────────────────────────────────
+# Dependencias
+# ─────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ─────────────────────────────────────────────
+# Build / Producción
+# ─────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+out/
+*.local
+
+# ─────────────────────────────────────────────
+# Vite
+# ─────────────────────────────────────────────
+.vite/
+vite.config.*.timestamp-*
+node_modules/.vite/
+
+# ─────────────────────────────────────────────
+# TypeScript
+# ─────────────────────────────────────────────
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ─────────────────────────────────────────────
+# Variables de entorno
+# (¡NUNCA subas tus .env reales!)
+# ─────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ─────────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─────────────────────────────────────────────
+# Testing (Vitest / Jest / Playwright / Cypress)
+# ─────────────────────────────────────────────
+coverage/
+.nyc_output/
+.vitest/
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# ─────────────────────────────────────────────
+# Editores / IDEs
+# ─────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ─────────────────────────────────────────────
+# Sistema operativo
+# ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─────────────────────────────────────────────
+# Misceláneos
+# ─────────────────────────────────────────────
+.cache/
+.temp/
+.tmp/
+*.pid
+*.seed
+*.pid.lock
+.eslintcache
+.stylelintcache
