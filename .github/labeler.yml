@@ -1,0 +1,26 @@
+# .github/labeler.yml
+
+# Etiqueta para cambios en documentación
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.md', 'docs/**']
+
+# Etiqueta para cambios en el código fuente de React
+frontend:
+  - changed-files:
+      - any-glob-to-any-file: 'src/**/*'
+
+# Etiqueta para cambios en la configuración del proyecto
+config:
+  - changed-files:
+      - any-glob-to-any-file: ['*.config.*', 'tsconfig*.json', 'package.json']
+
+# Etiqueta para cambios en workflows de CI/CD
+ci:
+  - changed-files:
+      - any-glob-to-any-file: '.github/workflows/**'
+
+# Etiqueta para cambios en estilos
+styles:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.css', '**/*.scss', '**/*.module.css']
