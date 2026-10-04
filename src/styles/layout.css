@@ -1,3 +1,25 @@
+/* ===== Topbar ===== */
+.topbar {
+  background: var(--verde-medio);
+  color: var(--dorado-claro);
+  padding: 0.6rem 3rem;
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.topbar .topbar-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.topbar i {
+  color: var(--dorado);
+  margin-right: 6px;
+}
+
 /* ===== Footer ===== */
 .footer {
   background: var(--verde-medio);
