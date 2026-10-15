@@ -1,0 +1,72 @@
+/* ===== Botones ===== */
+.btn-gold {
+    background: var(--dorado);
+    color: var(--verde-profundo);
+    padding: 1rem 2.2rem;
+    border: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-gold:hover {
+    background: var(--dorado-claro);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -10px rgba(201, 169, 97, 0.6);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--crema);
+    padding: 1rem 2.2rem;
+    border: 1px solid rgba(245, 239, 228, 0.35);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-ghost:hover {
+    border-color: var(--dorado);
+    color: var(--dorado);
+}
+
+/* ===== Marquee ===== */
+.marquee {
+    background: var(--dorado);
+    color: var(--verde-profundo);
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.marquee-track {
+    display: inline-block;
+    animation: scrollMarquee 25s linear infinite;
+}
+
+.marquee-track span {
+    margin: 0 2.5rem;
+    font-weight: 500;
+}
+
+.marquee-track i {
+    color: var(--verde-profundo);
+    font-size: 1rem;
+    margin-right: 12px;
+}

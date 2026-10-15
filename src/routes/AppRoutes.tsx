@@ -1,12 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
+import { Home } from '@/pages/Home/Home';
 
 export function AppRoutes() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<h1>Hola mundo</h1>} />
-        <Route path="*" element={<h1>Hola mundo (*)</h1>} />
+        <Route index element={<Home/>} />
+        <Route path="*" element={<Home/>} />
       </Route>
     </Routes>
   );

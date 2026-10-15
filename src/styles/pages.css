@@ -1,0 +1,123 @@
+/* ===== Hero ===== */
+.hero {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    min-height: 88vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 4rem 4rem 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--verde-profundo) 0%, var(--verde-medio) 100%);
+    position: relative;
+}
+
+.hero-content::before {
+    content: 'EL PALMAR';
+    position: absolute;
+    top: 2rem;
+    left: -1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(201, 169, 97, 0.06);
+    letter-spacing: 8px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--dorado);
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero-eyebrow::before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--dorado);
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.6rem;
+    font-weight: 500;
+    line-height: 0.95;
+    color: var(--crema);
+    margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+    font-style: italic;
+    color: var(--dorado);
+    font-weight: 400;
+}
+
+.hero-desc {
+    font-size: 1.05rem;
+    color: var(--texto-claro);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--verde-profundo) 0%, transparent 30%);
+}
+
+.hero-image .badge {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--dorado);
+    color: var(--verde-profundo);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    z-index: 2;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    animation: floatBadge 4s ease-in-out infinite;
+}
+
+.hero-image .badge .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.hero-image .badge .txt {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
