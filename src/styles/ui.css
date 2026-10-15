@@ -1,3 +1,4 @@
+/* ===== Botones ===== */
 .btn-gold {
     background: var(--dorado);
     color: var(--verde-profundo);
@@ -40,4 +41,32 @@
 .btn-ghost:hover {
     border-color: var(--dorado);
     color: var(--dorado);
+}
+
+/* ===== Marquee ===== */
+.marquee {
+    background: var(--dorado);
+    color: var(--verde-profundo);
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.marquee-track {
+    display: inline-block;
+    animation: scrollMarquee 25s linear infinite;
+}
+
+.marquee-track span {
+    margin: 0 2.5rem;
+    font-weight: 500;
+}
+
+.marquee-track i {
+    color: var(--verde-profundo);
+    font-size: 1rem;
+    margin-right: 12px;
 }
