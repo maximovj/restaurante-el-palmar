@@ -146,6 +146,12 @@
     background: linear-gradient(to right, rgba(201, 169, 97, 0.5), transparent);
 }
 
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 1.5rem 3rem;
+}
+
 .menu-item {
     display: flex;
     gap: 1.2rem;
