@@ -43,6 +43,59 @@
     color: var(--dorado);
 }
 
+/* ===== Section / SectionHeader ===== */
+.section {
+    padding: 5rem 5rem 6rem;
+    background: var(--verde-profundo);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header .eyebrow {
+    color: var(--dorado);
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.section-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: var(--crema);
+    line-height: 1.1;
+}
+
+.section-header h2 em {
+    font-style: italic;
+    color: var(--dorado);
+}
+
+.section-header .divider::before {
+    content: '◆';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--dorado);
+    background: var(--verde-profundo);
+    padding: 0 10px;
+    font-size: 0.7rem;
+}
+
+.section-header .divider {
+    width: 60px;
+    height: 1px;
+    background: var(--dorado);
+    margin: 1.5rem auto 0;
+    position: relative;
+}
+
 /* ===== Marquee ===== */
 .marquee {
     background: var(--dorado);
