@@ -1,10 +1,10 @@
-export function SectionHeader() {
+export function SectionHeader({eyebrow, title, highlight}:{eyebrow: string, title: string, highlight: string}) {
     return (
         <div className="section-header">
             <span className="eyebrow"></span>
-            Nuestra cocina
+            {eyebrow}
             <h2>
-                La<em>Carta</em>
+                {title}&nbsp;<em>{highlight}</em>
             </h2>
             <div className="divider"></div>
         </div>
