@@ -208,3 +208,60 @@
     font-weight: 300;
     line-height: 1.5;
 }
+
+
+/* ===== Gallery mosaic ===== */
+.gallery-mosaic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 1rem;
+}
+
+.gallery-mosaic .g-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.gallery-mosaic .g-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s ease;
+    filter: brightness(0.85) saturate(1.1);
+}
+
+.gallery-mosaic .g-item:hover img {
+    transform: scale(1.08);
+    filter: brightness(1) saturate(1.2);
+}
+
+.gallery-mosaic .g-item::after {
+    content: '🔥';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dorado);
+    font-size: 1.8rem;
+    background: rgba(14, 42, 32, 0.6);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.gallery-mosaic .g-item:hover::after {
+    opacity: 1;
+}
+
+.gallery-mosaic .g-item.span-2 {
+    grid-column: span 2;
+}
+
+.gallery-mosaic .g-item.tall {
+    grid-row: span 2;
+}
