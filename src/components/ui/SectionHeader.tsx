@@ -1,12 +1,17 @@
-export function SectionHeader({eyebrow, title, highlight}:{eyebrow: string, title: string, highlight: string}) {
-    return (
-        <div className="section-header">
-            <span className="eyebrow"></span>
-            {eyebrow}
-            <h2>
-                {title}&nbsp;<em>{highlight}</em>
-            </h2>
-            <div className="divider"></div>
-        </div>
-    );
+interface Props {
+  eyebrow: string;
+  title: string;
+  highlight: string;
+}
+
+export function SectionHeader({ eyebrow, title, highlight }: Props) {
+  return (
+    <div className="section-header">
+      <span className="eyebrow">{eyebrow}</span>
+      <h2>
+        {title} <em>{highlight}</em>
+      </h2>
+      <div className="divider" />
+    </div>
+  );
 }
