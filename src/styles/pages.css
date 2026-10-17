@@ -121,3 +121,11 @@
     text-transform: uppercase;
     margin-top: 4px;
 }
+
+/* ===== Location ===== */
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    align-items: stretch;
+}
