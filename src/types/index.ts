@@ -20,3 +20,11 @@ export interface MenuCategory {
     icon: string;         // clase FontAwesome
     items: MenuItem[];
 }
+
+export interface GalleryItem {
+    id: string;
+    src: string;
+    alt: string;
+    span?: 1 | 2;         // columnas
+    tall?: boolean;       // filas
+}
