@@ -145,3 +145,60 @@
     height: 1px;
     background: linear-gradient(to right, rgba(201, 169, 97, 0.5), transparent);
 }
+
+.menu-item {
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.8rem 0;
+    transition: 0.3s;
+    align-items: flex-start;
+}
+
+.menu-item:hover {
+    transform: translateX(6px);
+}
+
+.menu-item-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid rgba(201, 169, 97, 0.4);
+    padding: 3px;
+}
+
+.menu-item-body {
+    flex: 1;
+}
+
+.menu-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 4px;
+}
+
+.menu-item-head h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--crema);
+    letter-spacing: 0.5px;
+}
+
+.menu-item-head .price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: var(--dorado);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.menu-item-body p {
+    font-size: 0.92rem;
+    color: rgba(217, 210, 194, 0.75);
+    font-weight: 300;
+    line-height: 1.5;
+}
